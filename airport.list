@@ -1,57 +1,13 @@
-+rules:
-  # === 死循环紧急刹车拦截（必须首位） ===
-  - IP-CIDR,172.16.0.0/12,REJECT,no-resolve
-  - IP-CIDR,172.19.0.0/16,REJECT,no-resolve
-  - IP-CIDR,49.4.0.0/17,REJECT,no-resolve
-
-# === 死循环紧急刹车直连（必须首位） ===
-  - IP-CIDR,1.1.1.1/32,DIRECT,no-resolve
-
-  # === 你的代理域名（全部恢复为你原来的写法） ===
-  - DOMAIN-SUFFIX,wnacg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,github.com,🚀 节点选择
-  - DOMAIN-SUFFIX,linux.do,🚀 节点选择
-  - DOMAIN-SUFFIX,robinxb.com,🚀 节点选择
-  - DOMAIN-SUFFIX,x.com,🚀 节点选择
-  - DOMAIN-SUFFIX,twitter-ero-video-ranking.com,🚀 节点选择
-  - DOMAIN-SUFFIX,patreon.com,🚀 节点选择
-  - DOMAIN-SUFFIX,cloudflare.com,🚀 节点选择
-  - DOMAIN-SUFFIX,proton.me,🚀 节点选择
-  - DOMAIN-SUFFIX,webtoons.com,🚀 节点选择
-  
-  # === 机场域名（完全照搬原样） ===
-  - DOMAIN-SUFFIX,1.zlwl.org,🚀 节点选择
-  - DOMAIN-SUFFIX,web4.52pokemon.cc,🚀 节点选择
-  - DOMAIN-SUFFIX,www.快云.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,xiaomaimai14514.de5.net,🚀 节点选择
-  - DOMAIN-SUFFIX,www.xn--9kqv63b.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,xn--9kqz23b19z.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ygpy.net,🚀 节点选择
-  - DOMAIN-SUFFIX,xn--9kqs1lo79d.com,🚀 节点选择
-  - DOMAIN-SUFFIX,skyvpn.me,🚀 节点选择
-  - DOMAIN-SUFFIX,workers.dev,🚀 节点选择
-  - DOMAIN-SUFFIX,zh.momobaby.org,🚀 节点选择
-  - DOMAIN-SUFFIX,lajiaoyun.xyz,🚀 节点选择
-
-  # === 国内直连（避免绕路） ===
-
-  # === 出镜易（特别直连 ）===
-  - DOMAIN-SUFFIX,tdsdk.cpatrk.net,DIRECT
-  - DOMAIN-SUFFIX,cloud.cpatrk.net,DIRECT
-  - DOMAIN-SUFFIX,chujingapp.com,DIRECT
-  - DOMAIN-SUFFIX,cpatrk.net,DIRECT
-
-  # === 避免ip检测死循环（避免绕路） ===
-  - DOMAIN-SUFFIX,geojs.io,🚀 节点选择
-  - DOMAIN-SUFFIX,ip.sb,🚀 节点选择
-  - DOMAIN-SUFFIX,ip-api.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ipwho.is,🚀 节点选择
-  - DOMAIN-SUFFIX,ipapi.co,🚀 节点选择
-  - DOMAIN-SUFFIX,ipinfo.io,🚀 节点选择
-
-  # === 软件白名单 ===
-  - PROCESS-NAME,org.zwanoo.android.speedtest,🚀 节点选择
-  - PROCESS-NAME,ch.protonmail.android,🚀 节点选择
-  - PROCESS-NAME,com.easy.abroad,🚀 节点选择
-
-  # === 兜底（未匹配流量走代理） ===
+# airport.list
+1.zlwl.org
+web4.52pokemon.cc
+www.快云.xyz
+xiaomaimai14514.de5.net
+www.xn--9kqv63b.xyz
+xn--9kqz23b19z.com
+ygpy.net
+xn--9kqs1lo79d.com
+skyvpn.me
+workers.dev
+zh.momobaby.org
+lajiaoyun.xyz
